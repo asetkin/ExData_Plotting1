@@ -28,7 +28,7 @@ with(data,{
         with(data,lines(Time,as.numeric(as.character(Sub_metering_1))))
         with(data,lines(Time,as.numeric(as.character(Sub_metering_2)),col="red"))
         with(data,lines(Time,as.numeric(as.character(Sub_metering_3)),col="blue"))
-        legend("topright", cex=0.2, lty=1, col=c("black","red","blue"),legend=c("Sub_metering_1",
+        legend("topright", cex=0.5, lty=1, col=c("black","red","blue"),legend=c("Sub_metering_1",
                "Sub_metering_2","Sub_metering_3"))
         plot(data$Time,as.numeric(as.character(data$Global_reactive_power)),type="l",
              xlab="datetime",ylab="Global_reactive_power")
